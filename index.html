@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>Switch</title>
+        <meta charset="utf-8">
+        <script src="JS/main.js"></script>
+    </head>
+    <body>
+
+<p id="Switch"></p>
+<h1>What is your favorite weather?</h1>
+<h3>Pick your favorite weather from the ones below.</h3>
+<ul>
+    <li>snowy</li>
+    <li>rainy</li>
+    <li>stormy</li>
+    <li>Thunder</li>
+    <li>hot</li>
+    <li>breeze</li>
+</ul>
+<h3>Enter your Choice below.</h3>
+<input id="Weather_Input" type="text">
+<button onclick="weather_Function"></button> 
+<p id="Output"></p>
+
+<h1>This text will change</h1>
+<h3>This text will not change</h3>
+<button onclick="Hello_World_Function()">Click me</button>
+<canvas id="myCanvas" width="500" height="250" style="border:5px solid black;">
+    Your browser does not support the HTML canvas tag.</canvas>
+<script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    // Create gradient
+    var grd = ctx.createLinearGradient(0,0,300,0);
+    grd.addColorStop(0,"red");
+    grd.addColorStop(1,"white");
+    // Fill with gradient
+    ctx.fillStyle = grd;
+    ctx.fillRect(1,1,520,600);
+</script>
+</body>
+</html>
